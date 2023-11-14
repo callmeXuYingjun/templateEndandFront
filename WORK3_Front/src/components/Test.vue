@@ -1,7 +1,7 @@
 <template>
   <div id="test">
     <div id="test_top">
-      <font>Grid Summarization View</font>
+      <b>Grid Summarization View</b>
     </div>
     <div id="test_down"></div>
   </div>
@@ -17,7 +17,7 @@ export default {
     };
   },
   mounted() {
-    store.dispatch("testData_action");
+    store.dispatch("getTestData_action");
   },
   watch: {
     "sharedState.testData": function(newdata) {
